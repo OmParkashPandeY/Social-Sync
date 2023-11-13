@@ -8,6 +8,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LayoutsRoutingModule } from './layouts-routing.module';
 import { PartialsModule } from '../../partials/partials.module';
+import { MatDialogModule } from '@angular/material/dialog';
 
 // prettier-ignore
 @NgModule({
@@ -22,7 +23,8 @@ import { PartialsModule } from '../../partials/partials.module';
   imports: [
     CommonModule,
     LayoutsRoutingModule,
-    PartialsModule
+    PartialsModule,
+    MatDialogModule
   ]
 })
 export class LayoutsModule { }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NewPostComponent } from './new-post/new-post.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 // prettier-ignore
 @NgModule({
@@ -8,7 +9,8 @@ import { NewPostComponent } from './new-post/new-post.component';
     NewPostComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatDialogModule
   ]
 })
 export class PopupsModule { }
