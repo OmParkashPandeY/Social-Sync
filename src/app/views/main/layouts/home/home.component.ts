@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
 
      public createNewPostPopup() {
           let payload = {
-               userName: 'Om PandeY'
+               userName: 'Om PandeY',
+               page: 'HomeComponent'
           };
           this._dialog
                .open(NewPostComponent, {

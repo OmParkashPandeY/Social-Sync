@@ -19,4 +19,12 @@ export class NewPostComponent implements OnInit {
         }
 
      ngOnInit(): void {}
+
+     public closeDialogBox() {
+          let payload = {
+               userName: 'Rajeev Kumar',
+               page: 'NewPopupComponent'
+          };
+          this._dialogRef.close(payload);
+     }
 }
