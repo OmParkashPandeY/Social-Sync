@@ -4,8 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterbarComponent } from './footerbar/footerbar.component';
 
-
-
+// prettier-ignore
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -13,7 +12,12 @@ import { FooterbarComponent } from './footerbar/footerbar.component';
     FooterbarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+  ],
+  exports:[
+    NavbarComponent,
+    SidebarComponent,
+    FooterbarComponent
   ]
 })
 export class PartialsModule { }

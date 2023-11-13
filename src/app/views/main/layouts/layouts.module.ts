@@ -6,9 +6,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AllPostsComponent } from './all-posts/all-posts.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { LayoutsRoutingModule } from './layouts-routing.module';
+import { PartialsModule } from '../../partials/partials.module';
 
-
-
+// prettier-ignore
 @NgModule({
   declarations: [
     LayoutsComponent,
@@ -19,7 +20,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
     AboutUsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    LayoutsRoutingModule,
+    PartialsModule
   ]
 })
 export class LayoutsModule { }
