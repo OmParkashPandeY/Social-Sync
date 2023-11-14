@@ -10,6 +10,7 @@ import { LayoutsRoutingModule } from './layouts-routing.module';
 import { PartialsModule } from '../../partials/partials.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PicsStackComponent } from './pics-stack/pics-stack.component';
+import { PicsSettingsComponent } from './pics-settings/pics-settings.component';
 
 // prettier-ignore
 @NgModule({
@@ -20,7 +21,8 @@ import { PicsStackComponent } from './pics-stack/pics-stack.component';
     AllPostsComponent,
     UserProfileComponent,
     AboutUsComponent,
-    PicsStackComponent
+    PicsStackComponent,
+    PicsSettingsComponent
   ],
   imports: [
     CommonModule,

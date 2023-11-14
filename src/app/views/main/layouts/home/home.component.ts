@@ -33,8 +33,6 @@ export class HomeComponent implements OnInit {
                     scrollStrategy: this._overlay.scrollStrategies.block()
                })
                .afterClosed()
-               .subscribe((response) => {
-                    console.log(response);
-               });
+               .subscribe((response) => {});
      }
 }

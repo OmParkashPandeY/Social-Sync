@@ -1,0 +1,40 @@
+<div class="pics-settings-component">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12">
+                    <div class="setting-card">
+                         <div class="row">
+                              <div class="col-md-12">
+                                   <div class="title">
+                                        <b>
+                                             <span (click)="goToBack()">
+                                                  <i class="fas fa-arrow-left"></i>
+                                             </span>
+                                        </b>
+                                        &nbsp;
+                                        <b>Pics Stack Categories</b>
+                                   </div>
+                                   <div class="divider"></div>
+                              </div>
+                         </div>
+                         <div class="all-categories">
+                              <div class="row">
+                                   <ng-container *ngFor="let element of allImageCategories">
+                                        <div class="col-md-3">
+                                             <div class="checkbox-and-name">
+                                                  <div class="check-box">
+                                                       <input (change)="toggleCategory(element)" [checked]="element.isActive" type="checkbox" name="" id="" />
+                                                  </div>
+                                                  <div class="name">
+                                                       {{ element.name }}
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </ng-container>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>

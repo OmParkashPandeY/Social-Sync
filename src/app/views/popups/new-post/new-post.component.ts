@@ -15,7 +15,6 @@ export class NewPostComponent implements OnInit {
           private _dialogRef: MatDialogRef<NewPostComponent>,
         ){
           this.dialogBoxData = this._DIALOG_DATA;
-          console.log(this.dialogBoxData);
         }
 
      ngOnInit(): void {}
