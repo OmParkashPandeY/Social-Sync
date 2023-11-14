@@ -8,8 +8,8 @@
                               <span><i class="fas fa-angle-right"></i> </span>
                               <span> Pics Stack </span>
                          </div>
-                         <div class="text-and-action-button-end">
-                              <div class="pic-settings">
+                         <div class="text-and-action-button-end" (click)="navigateToNextScreen('pics-settings')">
+                              <div class="pic-settings" title="Select Category">
                                    <span (click)="navigateToNextScreen('pics-settings')"><i class="fas fa-cog"></i></span>
                               </div>
                          </div>
@@ -28,9 +28,9 @@
                                    </div>
                                    {{ element.name }}
                                    <div class="action-buttons">
-                                        <div class="icon-button">
+                                        <div class="icon-button" title="download">
                                              <span (click)="downloadImage(element.imageURL)">
-                                                  <i class="fas fa-arrow-down"></i>
+                                                  <i title="download" class="fas fa-arrow-down"></i>
                                              </span>
                                         </div>
 

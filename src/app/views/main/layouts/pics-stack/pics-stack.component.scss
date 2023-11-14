@@ -29,6 +29,13 @@
                     cursor: pointer;
                     padding: 0px 10px;
                }
+
+               &:hover {
+                    background-color: #f3f6fc;
+                    border-radius: 50%;
+                    width: auto;
+                    height: auto;
+               }
           }
      }
 
@@ -66,6 +73,13 @@
                     i {
                          font-size: 20px;
                          cursor: pointer;
+                    }
+
+                    &:hover {
+                         background-color: #f3f6fc;
+                         border-radius: 50%;
+                         width: auto;
+                         height: auto;
                     }
                }
           }
