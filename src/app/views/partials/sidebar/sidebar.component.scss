@@ -1,19 +1,19 @@
 .sidebar-button {
-  padding: 2px 16px;
-  margin: 4px 0px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #278fff;
+     padding: 2px 16px;
+     margin: 4px 0px;
+     font-weight: bold;
+     font-size: 16px;
+     color: #563d7c;
 
-  a {
-    cursor: pointer;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 1.5;
+     a {
+          cursor: pointer;
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 1.5;
 
-    &:hover {
-      transition: 300ms;
-      color: #543c79;
-    }
-  }
+          &:hover {
+               transition: 300ms;
+               color: #543c79;
+          }
+     }
 }
