@@ -1,13 +1,17 @@
-<div class="container">
-     <div class="row">
-          <div class="col-md-12">
-               <div class="sidebar-button">
-                    <span>
-                         <i class="fas fa-home"></i>
-                    </span>
-                    &nbsp;
-                    <a href="#">Home</a>
-               </div>
+<div class="main-sidebar">
+     <div class="container">
+          <div class="row">
+               <ng-container *ngFor="let element of sidebarButtons">
+                    <div class="col-md-12">
+                         <div class="sidebar-button">
+                              <span>
+                                   <i [ngClass]="element.icon"></i>
+                              </span>
+                              &nbsp;
+                              <a (click)="navigateToNextScreen(element.path)"> {{ element.label }} </a>
+                         </div>
+                    </div>
+               </ng-container>
           </div>
      </div>
 </div>

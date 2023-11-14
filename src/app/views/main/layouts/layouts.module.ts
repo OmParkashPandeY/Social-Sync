@@ -9,6 +9,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LayoutsRoutingModule } from './layouts-routing.module';
 import { PartialsModule } from '../../partials/partials.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { PicsStackComponent } from './pics-stack/pics-stack.component';
 
 // prettier-ignore
 @NgModule({
@@ -18,7 +19,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     DashboardComponent,
     AllPostsComponent,
     UserProfileComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    PicsStackComponent
   ],
   imports: [
     CommonModule,
