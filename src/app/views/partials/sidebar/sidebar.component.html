@@ -1,17 +1,19 @@
 <div class="main-sidebar">
      <div class="container">
           <div class="row">
-               <ng-container *ngFor="let element of sidebarButtons">
-                    <div class="col-md-12">
-                         <div class="sidebar-button">
-                              <span>
-                                   <i [ngClass]="element.icon"></i>
-                              </span>
-                              &nbsp;
-                              <a (click)="navigateToNextScreen(element.path)"> {{ element.label }} </a>
+               <div class="sidebar">
+                    <ng-container *ngFor="let element of sidebarButtons">
+                         <div class="col-md-12">
+                              <div class="sidebar-button" (click)="navigateToNextScreen(element.path)">
+                                   <span>
+                                        <i [ngClass]="element.icon"></i>
+                                   </span>
+                                   &nbsp;
+                                   <a>{{ element.label }}</a>
+                              </div>
                          </div>
-                    </div>
-               </ng-container>
+                    </ng-container>
+               </div>
           </div>
      </div>
 </div>

@@ -1,19 +1,33 @@
-.sidebar-button {
-  padding: 2px 16px;
-  margin: 4px 0px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #278fff;
+.sidebar {
+     margin-top: 5px;
 
-  a {
-    cursor: pointer;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 1.5;
+     .sidebar-button {
+          padding: 10px 16px;
+          border: 2px solid #543c79;
+          border-radius: 10px;
+          margin: 4px 0px;
+          font-weight: bold;
+          font-size: 16px;
+          color: #563d7c;
+          cursor: pointer;
 
-    &:hover {
-      transition: 300ms;
-      color: #543c79;
-    }
-  }
+          a {
+               cursor: pointer;
+               border: none;
+               background-color: #fff;
+               text-decoration: none;
+               font-size: 16px;
+               font-weight: 500;
+
+               &:hover {
+                    transition: 300ms;
+                    background-color: #e8e8e8ba;
+                    color: #543c79;
+               }
+          }
+
+          &:hover {
+               background-color: #e8e8e8ba !important;
+          }
+     }
 }
