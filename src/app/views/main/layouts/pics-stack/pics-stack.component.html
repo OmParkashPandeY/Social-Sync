@@ -1,0 +1,54 @@
+<div class="pics-stack-component">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12">
+                    <div class="menubar">
+                         <div class="text-and-action-button-start">
+                              <span> Social Sync </span>
+                              <span><i class="fas fa-angle-right"></i> </span>
+                              <span> Pics Stack </span>
+                         </div>
+                         <div class="text-and-action-button-end" (click)="navigateToNextScreen('pics-settings')">
+                              <div class="pic-settings" title="Select Category">
+                                   <span (click)="navigateToNextScreen('pics-settings')"><i class="fas fa-cog"></i></span>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="container">
+          <div class="row">
+               <ng-container *ngIf="picsList && picsList.length > 0">
+                    <ng-container *ngFor="let element of picsList">
+                         <div class="col-md-4">
+                              <div class="card">
+                                   <div class="card-image">
+                                        <img [src]="element.imageURL" alt="" />
+                                   </div>
+                                   {{ element.name }}
+                                   <div class="action-buttons">
+                                        <div class="icon-button" title="download">
+                                             <span (click)="downloadImage(element.imageURL)">
+                                                  <i title="download" class="fas fa-arrow-down"></i>
+                                             </span>
+                                        </div>
+
+                                        <div class="icon-button">
+                                             <span>
+                                                  <i class="fas fa-expand"></i>
+                                             </span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </ng-container>
+               </ng-container>
+               <ng-container *ngIf="picsList && picsList.length == 0">
+                    <div class="not-found-category">
+                         <span>Category not found.</span>
+                    </div>
+               </ng-container>
+          </div>
+     </div>
+</div>

@@ -1,0 +1,31 @@
+.main-layouts {
+     padding: 0px;
+     margin: 0px;
+
+     .layout-header {
+          position: fixed;
+          z-index: 100;
+          width: 100%;
+          background-color: grey;
+     }
+
+     .sidebar-and-childs-components {
+          display: flex;
+          justify-content: flex-start;
+
+          .sidebar {
+               position: fixed;
+               width: 260px;
+               overflow: auto;
+               height: 100vh;
+               padding-top: 60px;
+               background-color: #fff;
+          }
+
+          .childs-components {
+               padding-top: 60px;
+               margin-left: 260px;
+               width: calc(100vw - 260px);
+          }
+     }
+}
