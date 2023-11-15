@@ -3,18 +3,25 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './views/login/login.component';
 import { SignupComponent } from './views/signup/signup.component';
 import { Page404Component } from './views/page-404/page-404.component';
+import { LandingPageComponent } from './views/landing-page/landing-page.component';
+import { AuthGuard } from './shared/guards/auth-guards';
 
 const routes: Routes = [
      {
-          component: LoginComponent,
-          path: 'login'
+          path: 'login',
+          component: LoginComponent
      },
      {
-          component: SignupComponent,
-          path: 'signup'
+          path: 'signup',
+          component: SignupComponent
+     },
+     {
+          path: 'syncme',
+          component: LandingPageComponent
      },
      {
           path: '',
+          canActivate: [AuthGuard],
           loadChildren: () => import('./views/main/layouts/layouts.module').then((m) => m.LayoutsModule)
      },
      {
