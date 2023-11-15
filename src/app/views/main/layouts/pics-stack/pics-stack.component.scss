@@ -28,13 +28,10 @@
                     color: grey;
                     cursor: pointer;
                     padding: 0px 10px;
-               }
 
-               &:hover {
-                    background-color: #f3f6fc;
-                    border-radius: 50%;
-                    width: auto;
-                    height: auto;
+                    span:hover {
+                         color: #563d7c;
+                    }
                }
           }
      }
@@ -73,13 +70,11 @@
                     i {
                          font-size: 20px;
                          cursor: pointer;
-                    }
 
-                    &:hover {
-                         background-color: #f3f6fc;
-                         border-radius: 50%;
-                         width: auto;
-                         height: auto;
+                         &:hover {
+                              color: #563d7c;
+                              border-radius: 50%;
+                         }
                     }
                }
           }

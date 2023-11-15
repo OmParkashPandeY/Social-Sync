@@ -1,47 +1,58 @@
 @import '../../../../../assets/styles/variable.scss';
 
 .pics-settings-component {
-  padding: 10px 12px;
+     padding: 10px 12px;
 
-  .setting-card {
-    background-color: white;
-    box-shadow: $globalBoxShadow;
-    padding: 8px 8px;
-    margin: 4px 4px;
+     .setting-card {
+          background-color: white;
+          box-shadow: $globalBoxShadow;
+          padding: 8px 8px;
+          margin: 4px 4px;
 
-    .title {
-      i {
-        cursor: pointer;
-      }
-    }
+          .title {
+               .apply-btn {
+                    float: right;
+               }
 
-    .all-categories {
-      .checkbox-and-name {
-        padding: 4px 4px;
-        display: flex;
-        justify-content: flex-start;
+               p {
+                    cursor: pointer;
+                    font-weight: 500;
 
-        .check-box {
-          margin-top: auto;
-          margin-bottom: auto;
-          padding: 0px 10px;
-
-          input {
-            height: 20px;
-            width: 20px;
-            margin-top: 6px;
-            cursor: pointer;
+                    span {
+                         i {
+                              cursor: pointer;
+                         }
+                    }
+               }
           }
-        }
 
-        .name {
-          margin-top: auto;
-          margin-bottom: auto;
-          font-size: 16px;
-          font-weight: 600;
-          color: grey;
-        }
-      }
-    }
-  }
+          .all-categories {
+               .checkbox-and-name {
+                    padding: 4px 4px;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .check-box {
+                         margin-top: auto;
+                         margin-bottom: auto;
+                         padding: 0px 10px;
+
+                         input {
+                              height: 20px;
+                              width: 20px;
+                              margin-top: 6px;
+                              cursor: pointer;
+                         }
+                    }
+
+                    .name {
+                         margin-top: auto;
+                         margin-bottom: auto;
+                         font-size: 16px;
+                         font-weight: 600;
+                         color: grey;
+                    }
+               }
+          }
+     }
 }
