@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as jQuery from 'jquery';
+import gsap from 'gsap';
+declare var $: any;
 
 @Component({
-  selector: 'app-page-404',
-  templateUrl: './page-404.component.html',
-  styleUrls: ['./page-404.component.scss']
+     selector: 'app-page-404',
+     templateUrl: './page-404.component.html',
+     styleUrls: ['./page-404.component.scss']
 })
-export class Page404Component {
+export class Page404Component implements OnInit {
+     constructor() {}
 
+     ngOnInit(): void {}
 }
