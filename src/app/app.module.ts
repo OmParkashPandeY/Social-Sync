@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './views/login/login.component';
 import { SignupComponent } from './views/signup/signup.component';
 import { Page404Component } from './views/page-404/page-404.component';
+import { LandingPageComponent } from './views/landing-page/landing-page.component';
 
 // prettier-ignore
 @NgModule({
@@ -14,7 +15,8 @@ import { Page404Component } from './views/page-404/page-404.component';
     AppComponent,
     LoginComponent,
     SignupComponent,
-    Page404Component
+    Page404Component,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

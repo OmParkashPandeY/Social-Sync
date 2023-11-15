@@ -11,6 +11,19 @@ export class StorageService {
      constructor(
           ) {}
 
+     public isUserLoggedIn() {
+          if (this.get('isUserLoggedIn')) {
+               let status = JSON.parse(this.get('isUserLoggedIn'));
+               return status;
+          } else {
+               return false;
+          }
+     }
+
+     public setUserLoggedIn(data: any) {
+          this.set('isUserLoggedIn', JSON.stringify(data));
+     }
+
      public setPictureCategories(data: any) {
           this.set('pics-categories', JSON.stringify(data));
      }

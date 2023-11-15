@@ -1,0 +1,73 @@
+.landing-component {
+
+  .transparent-background {
+    transition: 300ms;
+    background-color: transparent;
+  }
+
+  .color-background {
+    transition: 300ms;
+    background-color: #5e4695;
+  }
+
+  .stickey-header {
+    position: fixed;
+    z-index: 100;
+    padding: 16px 12px;
+    width: 100%;
+    color: white;
+
+    .title-and-action-button {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-size: 24px;
+        display: flex;
+        font-weight: 700;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: flex-start;
+      }
+
+      .action-button {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: flex-end;
+
+        .login-button {
+          font-size: 20px;
+          padding: 0px 20px;
+          cursor: pointer;
+          font-weight: bold;
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 1.5;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.background-color {
+  background-color: #9870d4 !important;
+}
+
+.findout-button {
+  background-color: #563d7c !important;
+  color: #fff;
+  font-weight: 500;
+
+  &:hover {
+    background-color: #9870d4 !important;
+  }
+}
+
+.background-color2 {
+  background-color: #f3f6fc !important;
+}
