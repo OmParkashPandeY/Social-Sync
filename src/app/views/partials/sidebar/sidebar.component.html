@@ -2,16 +2,18 @@
      <div class="container">
           <div class="row">
                <div class="sidebar">
-                    <ng-container *ngFor="let element of sidebarButtons">
-                         <div class="col-md-12">
-                              <div class="sidebar-button" (click)="navigateToNextScreen(element.path)">
-                                   <span>
-                                        <i [ngClass]="element.icon"></i>
-                                   </span>
-                                   &nbsp;
-                                   <span>{{ element.label }}</span>
+                    <ng-container *ngFor="let element of menus">
+                         <ng-container *ngIf="element.display">
+                              <div class="col-md-12">
+                                   <div class="sidebar-button" [ngClass]="element.active ? 'active' : ''" (click)="handleMenuNavigation(element)">
+                                        <span>
+                                             <i [ngClass]="element.icon"></i>
+                                        </span>
+                                        &nbsp;
+                                        <span>{{ element.label }}</span>
+                                   </div>
                               </div>
-                         </div>
+                         </ng-container>
                     </ng-container>
                </div>
           </div>
