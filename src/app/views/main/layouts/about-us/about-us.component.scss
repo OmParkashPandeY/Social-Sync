@@ -1,7 +1,38 @@
-// .about-us{
-//         .
-// }
+.about-us {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     background-color: #fff;
+     color: #000;
 
-.features {
-     padding-left: 20px;
+     .about-us-content {
+          .headline {
+               text-align: center;
+               font-weight: 500;
+               font-size: 32px;
+               margin-top: 10px;
+          }
+          .content {
+               font-weight: 500;
+               font-size: 15px;
+          }
+     }
+
+     .additional {
+          font-weight: 500;
+          font-size: 15px;
+     }
+
+     .features {
+          padding-left: 20px;
+
+          p {
+               font-weight: 700;
+               font-size: 18px;
+          }
+          span {
+               font-weight: 500;
+               font-size: 17px;
+          }
+     }
 }
