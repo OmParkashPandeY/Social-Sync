@@ -23,11 +23,17 @@
      box-shadow: 10px 10px 15px #000;
      margin-top: 50px;
 
-     .side {
-          p {
-               position: absolute;
-               top: 180px;
-               margin-right: 30px;
+     .app-name {
+          position: absolute;
+          margin-top: 20px;
+          font-weight: 600;
+          padding: 10px;
+
+          span {
+               img {
+                    height: 20px;
+                    font-weight: 600;
+               }
           }
      }
 }
@@ -37,10 +43,21 @@
      width: 50%;
      align-items: center;
      background-color: #f5f5f5;
-     h2 {
-          font-size: 3rem;
+     h4 {
+          font-size: 32px;
+          margin-top: 50px;
+     }
+     input {
+          border: 1px solid #543c79;
+          outline: none;
+          border-radius: 5px;
+     }
 
-          margin: 40px;
+     .new-user {
+          position: absolute;
+          margin-top: 15px;
+          margin-left: 130px;
+          font-weight: 400;
      }
 }
 .box {
@@ -54,35 +71,29 @@
 #submit {
      padding: 12px 30px;
      width: 40%;
-     margin-top: 40px;
+     margin-top: 10px;
+     transition-duration: 0.3s ease;
      color: #fff;
      font-weight: bold;
      border: none;
      outline: none;
      border-radius: 20px;
-     background-color: #000;
+     background-color: #7252a3;
 }
 #submit:hover {
-     background-color: #750000;
+     background-color: #543c79;
      cursor: pointer;
 }
-.form a {
-     text-decoration: none;
-     color: #000;
-     margin-top: 20px;
-}
-.form a:hover {
-     color: #fd4e4e;
-}
+
 .side {
      display: flex;
      justify-content: center;
      align-items: center;
      width: 50%;
-     background-color: #750000;
+     background-color: #f5f5f5;
 }
 
 .side img {
      width: 450px;
-     height: 500px;
+     height: auto;
 }
