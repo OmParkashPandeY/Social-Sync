@@ -5,11 +5,15 @@
                     <div class="setting-card">
                          <div class="row">
                               <div class="col-md-12">
-                                   <div class="title">
-                                        <button class="btn btn-info apply-btn" (click)="goToBack()">Apply</button>
-                                        <p (click)="goToBack()" title="Go back">
-                                             <span><i class="fas fa-arrow-left"></i></span> Go Back
-                                        </p>
+                                   <div class="title-and-action-button">
+                                        <div (click)="goToBack()" class="title">
+                                             <span class="back-button">
+                                                  <i class="fas fa-arrow-left"></i>
+                                             </span>
+                                             &nbsp;
+                                             <span>Go Back</span>
+                                        </div>
+                                        <div class="action-button"></div>
                                    </div>
                                    <div class="divider"></div>
                               </div>
