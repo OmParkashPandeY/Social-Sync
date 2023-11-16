@@ -8,6 +8,9 @@ import { LoginComponent } from './views/login/login.component';
 import { SignupComponent } from './views/signup/signup.component';
 import { Page404Component } from './views/page-404/page-404.component';
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
+import { ApiService } from './shared/services/api.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // prettier-ignore
 @NgModule({
@@ -21,9 +24,13 @@ import { LandingPageComponent } from './views/landing-page/landing-page.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    ReactiveFormsModule 
   ],
-  providers: [],
+  providers: [
+     ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

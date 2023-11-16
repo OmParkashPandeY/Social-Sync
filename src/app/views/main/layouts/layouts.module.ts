@@ -11,6 +11,7 @@ import { PartialsModule } from '../../partials/partials.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PicsStackComponent } from './pics-stack/pics-stack.component';
 import { PicsSettingsComponent } from './pics-settings/pics-settings.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // prettier-ignore
 @NgModule({
@@ -28,7 +29,9 @@ import { PicsSettingsComponent } from './pics-settings/pics-settings.component';
     CommonModule,
     LayoutsRoutingModule,
     PartialsModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule ,
+    
   ]
 })
 export class LayoutsModule { }

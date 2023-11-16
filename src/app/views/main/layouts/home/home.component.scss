@@ -1,0 +1,18 @@
+.text-field-and-submit-button {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px 0px;
+
+     .text-field,
+     .submit-button {
+          margin: auto 0px;
+     }
+
+     .text-field {
+          width: 100%;
+
+          input {
+               width: 100%;
+          }
+     }
+}
